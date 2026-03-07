@@ -1,0 +1,21 @@
+const base = require('@playwright/test')
+
+exports.userdetail=base.test.extend(
+    {
+        testdata:{
+                f_name:"Shiva",
+                l_name:"Singh",
+                email:"shiva@gmail123.com",
+                mob_no:"1234567890",
+                password:"Singh@1712",
+                confirm_p:"Singh@1712",   
+                card_no:"1111 1121 1081 1151",
+                cvv_code:"1430",
+                card_name:"SHIVA SINGH",
+                coup_add:"rahulshettyacademy",
+                ex_date:"11",
+                ex_month:"11",
+                sear_coun:"Ind" 
+        }
+    }
+)
