@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "final_ass_playwright",
+=======
+  "name": "playwright",
+>>>>>>> 58cfacd8e8f0ca7de558cda6592fab69b477f7cd
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +14,11 @@
   "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.58.2",
+<<<<<<< HEAD
     "@types/node": "^25.5.0"
+=======
+    "@types/node": "^25.2.3"
+>>>>>>> 58cfacd8e8f0ca7de558cda6592fab69b477f7cd
   },
   "dependencies": {
     "dotenv": "^17.3.1"

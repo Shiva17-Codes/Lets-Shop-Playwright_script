@@ -23,7 +23,11 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
+<<<<<<< HEAD
   reporter: [['html',{open:'always'}]],
+=======
+  reporter: 'html',
+>>>>>>> 58cfacd8e8f0ca7de558cda6592fab69b477f7cd
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
@@ -31,18 +35,33 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
+<<<<<<< HEAD
     screenshot: 'only-on-failure',
   },
 
+=======
+    headless:false,
+    
+     
+  },
+
+
+>>>>>>> 58cfacd8e8f0ca7de558cda6592fab69b477f7cd
   /* Configure projects for major browsers */
   projects: [
     {
       name: 'chromium',
+<<<<<<< HEAD
       use: { ...devices['Desktop Chrome'],
          headless:false, //always run in headless mode
         slowMO:300,
         trace:'on'
        },
+=======
+      use: { ...devices['Desktop Chrome'] },
+      
+      
+>>>>>>> 58cfacd8e8f0ca7de558cda6592fab69b477f7cd
       
     },
 
@@ -56,10 +75,17 @@ export default defineConfig({
     //   use: { ...devices['Desktop Safari'] },
     // },
 
+<<<<<<< HEAD
     // /* Test against mobile viewports. */
     // // {
     // //   name: 'Mobile Chrome',
     // //   use: { ...devices['Pixel 5'] },
+=======
+    /* Test against mobile viewports. */
+    // {
+    //   name: 'Mobile Chrome',
+    //   use: { ...devices['Pixel 5'] },
+>>>>>>> 58cfacd8e8f0ca7de558cda6592fab69b477f7cd
     // },
     // {
     //   name: 'Mobile Safari',
@@ -83,7 +109,11 @@ export default defineConfig({
   //   url: 'http://localhost:3000',
   //   reuseExistingServer: !process.env.CI,
   // },
+<<<<<<< HEAD
 
   timeout:50000,
+=======
+ timeout: 50000,
+>>>>>>> 58cfacd8e8f0ca7de558cda6592fab69b477f7cd
 });
 
